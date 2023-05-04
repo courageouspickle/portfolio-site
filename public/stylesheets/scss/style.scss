@@ -9,7 +9,7 @@ a:visited {
   color: inherit;
 }
 
-.navbar > a {
+.navbar > a, .footer > a {
   padding: 1rem;
   font-size: 1rem;
   text-align: center;
@@ -17,7 +17,7 @@ a:visited {
   color: primaryColor;
   text-decoration: none;
 }
-.navbar > a:hover {
+.navbar > a:hover, .footer > a:hover {
   color: #606060
 }
 
@@ -28,4 +28,12 @@ a:visited {
   height: 3rem;
   width: 100%;
   opacity: 1.0;
+}
+
+.footer {
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
 }
