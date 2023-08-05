@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var projectsRouter = require('./routes/projects');
 var aboutRouter = require('./routes/about');
 var contactRouter = require('./routes/contact');
+var devBlogRouter = require('./routes/DevBlog')
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use('/', indexRouter);
 app.use('/projects', projectsRouter);
 app.use('/about', aboutRouter);
 app.use('/contact', contactRouter);
+app.use('/DevBlog', devBlogRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -42,4 +44,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+port = 8000;
+app.listen(port, () => console.log("Listening on port " + port))
 module.exports = app;

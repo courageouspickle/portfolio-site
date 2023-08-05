@@ -1,0 +1,168 @@
+/* Utility Classes */
+
+.animate {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: ease-in;
+}
+
+.slide-left {
+    animation-name: slideLeft;
+}
+
+.slide-left-and-sway{
+    animation-name: slideLeftAndSway;
+    animation-duration: .5s;
+}
+
+.shrink {
+    animation-name: shrink;
+}
+
+.sparkle-gold{
+    animation-name: sparkleGold;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.fade-in {
+    animation-name: fadeIn;
+}
+
+.fade-out {
+    animation-name: fadeOut;
+}
+
+.blur-in {
+    animation-name: blurIn; 
+}
+
+.second {
+    animation-delay: 2s;
+}
+.third {
+    animation-delay: 3s;
+}
+.fourth {
+    animation-delay: 5s;
+}
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    /*margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    
+}
+
+.typewriter#first-line h1{
+    animation: 
+        typing 2s steps(14, end),
+        blink-caret .75s step-end 3;
+    animation-fill-mode: both;
+}
+
+.typewriter#second-line h1{
+    animation: 
+        typing 2s steps(24, end),
+        blink-caret .75s step-end infinite;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}
+
+/* Animations */
+@keyframes shrink {
+    from {
+        height: 40vh;
+        font-size: 80px;
+    }
+    to{
+        height: 20vh;
+        font-size: 50px;
+    }
+}
+
+@keyframes bounce {
+    0%{
+        transform: translateY(-100%);
+    }
+
+    70% {
+        transform: translateY(-25%);
+    }
+
+    94% {
+        transform: translateY(-10%);
+    }
+
+    50%, 84%, 100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideLeft {
+    from { transform: translateX(100px); }
+    to { transform: translateX(0px); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity:1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity:0; }
+}
+
+@keyframes blurIn {
+    from { filter: blur(5px); }
+    to { filter: blur(0%); }
+}
+
+@keyframes slideLeftAndSway {
+    0%{
+        transform: translateX(200%);
+    }
+    80%{
+        transform: translateX(-20px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@keyframes sparkleGold {
+    0%, 100%{
+        background: linear-gradient(90deg, black, gold, black, gold)
+    }
+    25%{
+        
+        background: linear-gradient(90deg, gold, black, gold, black)
+    }
+    50%{
+        background: linear-gradient(90deg, black, gold, black, gold)
+    }
+    75%{
+        
+        background: linear-gradient(90deg, gold, black, gold, black)
+    }
+    
+}

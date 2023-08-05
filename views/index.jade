@@ -1,5 +1,38 @@
 extends layout
 
+block navbar
+  .navbar.animate.fade-in.fourth
+    a(href="/") Home
+    a(href="/about") About
+    a(href="/projects") Projects
+    a(href="/contact") Contact
+    a(href='/DevBlog') DevBlog
+  
 block content
-  h1= title
-  p Welcome to #{title}
+  section.flex-column
+    span.flex-left
+      .typewriter#first-line
+        h1 Hi, I'm Harry.
+    span
+      .typewriter#second-line
+        h1 I'm a software engineer.
+    
+
+//
+  section.flex-center
+    img.animate.second.shrink(src='img/Headshot.jpg')
+    .flex-left
+      h3.animate.second.shrink#hello= "Hi, I'm Harry"
+  .flex-columns.animate.fade-in.second
+    h2 Penis 
+    h2 ballsack
+    h2 Efficiency
+    h2 Weenie
+//
+    
+
+    
+block footer
+  .footer.animate.fade-in.fourth
+    a(href="https://www.linkedin.com/in/harrison-dill-399a66183/") LinkedIn
+    a(href="https://berkeley.joinhandshake.com/stu/users/14476092") Handshake
