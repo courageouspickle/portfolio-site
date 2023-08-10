@@ -1,4 +1,174 @@
 extends layout
 
 block content
-  h1= title
+  section.small-black-divider
+  section.text-divider 
+    h1.no-margin Enterprise Projects
+  section.project-section
+    .flex.flex-sa
+      div.project-image.scheduler
+      .project-text-box
+        h1 CSO Scheduling Program
+        p.project-text.
+          A scheduling system that takes into account 
+          employee availability, preferences for 
+          various shifts and times, eligibility for 
+          shifts that require a minimum rank or
+          special training, and many other factors. 
+          Utilizes dynamic programming principles 
+          to recursively build an optimal schedule 
+          for hundreds of employees.
+        .flex.flex-center
+          div.button
+            a(href="https://github.com/courageouspickle/CSOSchedulingProgram")
+              .button-text github
+  section.text-divider 
+    h1.no-margin Passion Projects
+  section.project-section
+    .flex.flex-sa.flex-d-rr
+      div.project-image.website
+      .project-text-box
+        h1 This Website
+        p.project-text.
+          Built from scratch in Node.js with express, 
+          hosted on AWS. I wanted to get more hands-on 
+          experience with full-stack development and 
+          the cloud development pipeline. For how 
+          simple the site is, it took me a painstakingly 
+          long time to build because it was a massive 
+          learning process. Im very glad I followed 
+          through with it, and now I feel I could do it 
+          again in a tenth of the time.
+        .flex.flex-center
+          div.button
+            a(href="https://github.com/courageouspickle/portfolio-site")
+              .button-text github
+  section.divider 
+  section.project-section
+    .flex.flex-sa
+      div.project-image.zork
+      .project-text-box
+        h1 Text-Based RPG
+        p.project-text.
+          My first passion project, made in high school. 
+          Despite having no prior experience with 
+          object-oriented programming, I used a complex 
+          system of inheritance with different classes 
+          and interfaces to make varioous items and 
+          enemies. The user plays by typing in commands 
+          to the terminal and receiving results and prompts 
+          for the next command. Users can explore, level up 
+          their hero, find and use helpful gear, and 
+          battle monsters while managing fatigue and a 
+          dangerous day/night cycle. 
+        .flex.flex-center
+          div.button
+            a(href="https://github.com/courageouspickle/Heroes/blob/main/Heroes/heroClasses/Client.java")
+              .button-text github
+  section.text-divider 
+    h1.no-margin University Projects
+  section.project-section
+    .flex.flex-sa.flex-d-rr
+      div.project-image.map
+      .project-text-box
+        h1 Action Map
+        p.project-text.
+          Together with a team of two other classmates, 
+          I built this website in Ruby on Rails which 
+          enables users to find political representatives 
+          for any county in the country, and conveniently 
+          share news articles pertaining to any of those 
+          representatives. The backend utilizes the 
+          Model-View-Controller scheme to organize, 
+          store, and display data for news articles, 
+          representatives, states, and counties.
+        .flex.flex-center
+          div.button
+            a(href="https://github.com/courageouspickle/Action-map")
+              .button-text github
+  section.divider 
+  section.project-section
+    .flex.flex-sa
+      div.project-image.bearmaps
+      .project-text-box
+        h1 Bearmaps
+        p.project-text.
+          A web app that displays the Berkeley area and
+          provides navigation directions; other features
+          include an autocomplete-enabled search
+          function, fast and flexible map zooming.
+          The back end implements a weighted graph
+          of intersections and utilizes the A*
+          algorithm to determine the shortest route.
+        .flex.flex-center
+          div.button
+            a(href="https://github.com/Berkeley-CS61B-Student/fa20-s268/tree/master/proj2d/bearmaps")
+              .button-text github
+  section.divider 
+  section.project-section
+    .flex.flex-sa.flex-d-rr
+      div.project-image.poker
+      .project-text-box
+        h1 Texas Hold 'em Win Probability Calculator
+        p.project-text.
+          This program is designed to output the win 
+          probability of a certain Texas Hold ‘em hand 
+          with no other given information; in other 
+          words the winrate of a certain hand against 
+          a single opponent’s random hand. It works by 
+          brute-force simulating thousands of random 
+          poker hands versus the given hand to calculate 
+          the probability with variance less than a percent.
+        .flex.flex-center
+          div.button
+            a(href="https://github.com/courageouspickle/PokerProbability/tree/main")
+              .button-text github
+  section.divider 
+  section.project-section
+    .flex.flex-sa
+      div.project-image.dice
+      .project-text-box
+        h1 Hog AI
+        p.project-text.
+          An implementation of the dice game “Hog” 
+          including an AI that can utilize various 
+          strategies to try to beat the player or 
+          any other AI. My final AI placed within 
+          the top 10 of my ~1,400 student CS class 
+          at UC Berkeley.
+        .flex.flex-center
+          div.button
+            a(href="https://github.com/courageouspickle/HogGame")
+              .button-text github
+  section.divider 
+  section.project-section
+    .flex.flex-sa.flex-d-rr
+      div.project-image.solar-system
+      .project-text-box
+        h1 Many-Body Gravity Simulator
+        p.project-text.
+          Given a starting set of planets with positions, 
+          velocities and masses, this program evolves the 
+          system over time in two dimensions based on each 
+          planet’s gravitational attraction to each of the 
+          others.
+        .flex.flex-center
+          div.button
+            a(href="https://github.com/Berkeley-CS61B-Student/fa20-s268/tree/master/proj0")
+              .button-text github
+  section.divider 
+  section.project-section
+    .flex.flex-sa
+      div.project-image.ants
+      .project-text-box
+        h1 Ants Vs. Some Bees
+        p.project-text.
+          A game wherein the player must strategically place 
+          ants to defend against waves of attacking bees. 
+          Extensively utilizes inheritance to implement many 
+          different types of bees and ants without repeated 
+          code.
+        .flex.flex-center
+          div.button
+            a(href="https://github.com/courageouspickle/AntsGame")
+              .button-text github

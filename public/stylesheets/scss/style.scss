@@ -34,14 +34,18 @@ a:visited {
   color: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 .navbar > a, .footer > a {
   position:relative;
   margin: 1rem;
   font-size: 1rem;
   text-align: center;
   vertical-align: middle;
-  color: black;
-  text-decoration: none;
+  color: white;
+  font-family: Modeseven;
 }
 
 a::after {
@@ -54,7 +58,7 @@ a::after {
   border-radius: 5px;
   transform: scaleX(0);
   transition: transform .5s;
-  background-color: black;
+  background-color: white;
   transform-origin: right;
 }
 
@@ -88,49 +92,75 @@ section {
   place-items: center;
   align-items: center;
   height: 80vh;
-  width: 100vw;
+  overflow:hidden;
 }
 
-
-.flex-columns {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.section-two {
+  background-image: linear-gradient(black, white);
+  height: 20vh;
 }
 
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  vertical-align: middle;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:flex-start;
-  margin: 30px;
-
+.section-three {
+  background-color: white;
+  height: 100vh
 }
 
 h1 {
   color: white;
   font-size: 50px;
   font-family: Modeseven;
+  margin: 0px;
+  padding-bottom: 20px;
+}
+
+// flexboxes
+
+.flex {
+  display: flex;
+  width: 100%;
+}
+
+.flex-index { //this only exists because width 100% broke index for some reason
+  display: flex;
+}
+
+.flex-columns {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.flex-column {
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  margin: 30px;
 }
 
 .flex-sb {
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+.flex-sa {
+  justify-content: space-around;
+  align-items: center;
+}
+
 .flex-left{
-  display:flex;
   justify-content: left;
   align-items: flex-start;
   justify-items:start;
   text-align: left;
+}
+
+.flex-d-rr {
+  flex-direction: row-reverse;
 }
 
 img {
@@ -138,9 +168,131 @@ img {
   object-fit:scale-down;
 }
 
-#hello {
-  margin:auto;
+.about-text {
   color: white;
+  font-size: 20px
+}
+
+p {
+  margin: 30px;
+  line-height: 30px; 
+}
+
+.about-section {
+  height: 100vh;
+
+}
+
+.project-section {
+  margin: 30px;
+  height:max-content;
+  vertical-align: middle;
+}
+
+.project-text-box {
+  width: 60vw;
+  height: inherit;
+  margin: 30px;
+}
+
+.project-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 20%;
+  border-color: white;
+  border-width: 3px;
+  border-style: dashed;
+}
+
+.project-image.byow {
+  background: url("../../img/byow.png") 50% 50% no-repeat;
+}
+
+.project-image.scheduler {
+  background: url("../../img/schedule-request.png") 50% 50% no-repeat;
+}
+
+.project-image.website {
+  background: url("../../img/portfolio-site-screenshot.png") 0% 60% no-repeat;
+}
+
+.project-image.zork {
+  background: url("../../img/zork.png") 50% 50% no-repeat;
+}
+
+.project-image.map {
+  background: url("../../img/map.jpeg") 50% 50% no-repeat;
+}
+
+.project-image.bearmaps {
+  background: url("../../img/bearmaps.png") 50% 30% no-repeat;
+}
+
+.project-image.poker {
+  background: url("../../img/poker.jpg") 30% 30% no-repeat;
+}
+
+.project-image.dice {
+  background: url("../../img/dice.png") 45% 30% no-repeat;
+}
+
+.project-image.solar-system {
+  background: url("../../img/solar-system.png") 30% 33% no-repeat;
+}
+
+.project-image.ants {
+  background: url("../../img/ants.png") 32% 38% no-repeat;
+}
+
+.project-text {
+  color: white;
+  font-size: 20px;
+  margin: 0;
+}
+
+.button {
+  vertical-align: middle;
+  color: white;
+  background-color: black;
+  border: 3px solid white;
+  border-radius: 20%;
+  transition-duration: 1s;
+  margin: 20px;
+}
+
+.button-text {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.button:hover {
+  color: black;
+  background-color: white;
+}
+
+.text-divider {
+  background-color:darkgrey;
+  height: 10vh;
+}
+
+.divider {
+  background-color:darkgrey;
+  height: 1vh;
+}
+
+.small-black-divider {
+  background-color: black;
+  height: 1vh;
+}
+
+#flowers {
+  width:50vw;
+  object-fit:cover;
+}
+
+.no-margin {
+  margin: 0px;
+  padding:0px;
 }
 
 

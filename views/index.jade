@@ -5,17 +5,30 @@ block navbar
     a(href="/") Home
     a(href="/about") About
     a(href="/projects") Projects
-    a(href="/contact") Contact
-    a(href='/DevBlog') DevBlog
+    //a(href="/contact") Contact
+    //a(href='/DevBlog') DevBlog
   
 block content
-  section.flex-column
-    span.flex-left
+  section.flex-index.flex-column
+    .flex-index.flex-left
       .typewriter#first-line
         h1 Hi, I'm Harry.
-    span
+    div
       .typewriter#second-line
         h1 I'm a software engineer.
+  //-
+    section.section-two
+    section.section-three 
+      .flex-column
+        span.flex-left 
+          img#headshot(src="img/Headshot.jpg")
+          p. 
+            I make websites, apps, games, and all sorts 
+            of other software systems. I have a deep 
+            interest in networking and cybersecurity.
+        h1 Want to see what I've done?
+        button.button Click Here
+
     
 
 //
