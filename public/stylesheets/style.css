@@ -375,9 +375,9 @@ p {
   width: 250px;
   height: 250px;
   border-radius: 20%;
-  border-color: white;
-  border-width: 3px;
-  border-style: dashed;
+  outline-color: white;
+  outline-width: 3px;
+  outline-style: dashed;
 }
 
 .project-image.byow {
